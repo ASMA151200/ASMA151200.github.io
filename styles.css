@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+     /* Ajouter une image d'arrière-plan */
+     background-image: url('Um.jpeg');
+     /* Centrer l'image horizontalement et verticalement */
+     background-position: center;
+     /* Faire en sorte que l'image d'arrière-plan couvre toute la fenêtre */
+     background-size: cover;
+     /* Fixer l'image d'arrière-plan pour qu'elle ne défiler pas avec le contenu */
+     background-attachment: fixed;
+    color: black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7% 6%;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo span {
+    color: rgb(252, 70, 209);
+}
+
+.navbar ul {
+    flex: 1;
+    text-align: right;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navbar ul li::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: rgb(252, 70, 182);
+    transition: 0.5s;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.text {
+    padding: 40% 20%;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.text span {
+    color: rgba(252, 70, 107, 1);
+}
+
+.btn {
+    background: radial-gradient(circle, rgb(2, 236, 217) 30%, rgb(252, 70, 167) 100%);
+    padding: 15px 30px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+}
+
+.skills, .projects, .testimonials, .contact-form, .social-links {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skills h2, .projects h2, .testimonials h2, .contact-form h2, .social-links h2 {
+    margin-bottom: 20px;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    margin-bottom: 10px;
+}
+
+.testimonials .testimonial {
+    margin-bottom: 40px;
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.testimonials cite {
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: rgba(252, 70, 107, 1);
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #ff396d;
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links ul li:last-child {
+    margin-right: 0;
+}
+.img img {
+    width: 40%; /* Ajuster la largeur de l'image à 70% de la largeur du conteneur parent */
+    height: auto; /* Laisser la hauteur ajustée automatiquement pour conserver les proportions */
+    position: absolute;
+    top: 60%;
+    right: 0;
+    padding: 90px;
+}
+
